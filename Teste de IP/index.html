@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>Teste de IP</title>
+        <meta charset="UTF-8">
+        
+        <style type="text/css">
+            
+            h1   {  color: ForestGreen;
+                    background: LightCoral;
+                    font-family: verdana;
+                    font-size: 300%;
+                    border: 2px solid ForestGreen;
+                    padding: 30px;}
+            
+            h4{
+                color: ForestGreen;
+                background: LightSkyBlue;
+                font-family: verdana;
+                font-size: 130%;
+                border: 2px solid ForestGreen;
+                padding: 30px;}
+            }
+
+                    
+            
+
+        </style>
+            
+    </head>
+    
+        
+    
+        <form action="/cgi-bin/ip.py" method="POST">
+            <h1 style="text-align:center;">Teste de IP</h1>
+            <br>
+            <p style="text-align: center;font-size:130%;">Digite o Endereço de IP :</p>
+            <p style="text-align: center;"><input type="text" name ="ip" required="Entre com um IP"><br><br><input type="submit" value="Enviar"></p>
+        </form>
+
+        <div> 
+            <p>.<br>.</p>
+            <h4 style="text-align:center;">Sobre o IPV4:</h4>
+            <p>Um Endereço de Protocolo da Internet (Endereço IP), é um rótulo numérico atribuído a cada dispositivo 
+                (computador, impressora, smartphone etc.) conectado a uma rede de computadores que utiliza o Protocolo de Internet para comunicação.Um endereço IP 
+                serve a duas funções principais: identificação de interface de hospedeiro ou de rede e endereçamento de localização.<br>
+                O IPv4 é a quarta e mais difundida versão do protocolo IP. Com endereços no padrão 32 bits, é bem antigo e possui vários problemas — desde falhas de 
+                segurança incontornáveis até o esgotamento da sua capacidade de expansão. Hoje, em todo o mundo, já está bem difícil conseguir um endereço nesse padrão.
+            </p>
+            <hr>
+            <p>
+                A classe A possui um conjunto de endereços que vão desde o 1.0.0.0 até 127.0.0.0, 
+                onde o primeiro octeto (primeiros 8 bits N.H.H.H) de um endereço IP identifica  a 
+                rede e os restantes 3 octetos ( 24 bits) irão identificar um determinado host nessa rede.
+            </p>
+            <hr>
+            <p>
+                A classe B possui um conjunto de endereços que vão desde o 128.0.0.0 até 191.255.0.0, 
+                onde os dois primeiros octetos (16 bits N.N.H.H) de um endereço IP identificam  a rede 
+                e os restantes 2 octetos ( 16 bits) irão identificar um determinado host nessa rede.
+            </p>
+            <hr>
+            <p>
+                A classe C possui um conjunto de endereços que vão desde o 192.0.0.0 até 223.255.255.0, 
+                onde os três primeiros octetos (24 bits N.N.N.H) de um endereço IP identificam  a rede e 
+                o restante octeto ( 8 bits) irão identificar um determinado host nessa rede.
+            </p>
+            <hr>
+            <p>
+                Para a interface de loopback é reservado todo o bloco de endereços IP classe A com identificação 
+                de rede 127.0.0.0/8, e por convenção, a maioria dos sistemas atribuem o endereço IP 127.0.0.1 a 
+                esta interface (::1 em redes IPv6), além de usar o nome localhost para identificá-la.
+            </p>
+            <hr>
+            <p>
+                IP válido: É um Nº. IP que tem acesso direto à Internet, podendo ser dinâmico ou estático. IP estático 
+                (ou fixo) é um número IP dado permanentemente a um computador, ou seja, seu IP não muda, exceto se tal 
+                ação for feita manualmente. IP dinâmico, por sua vez, é um número que é dado a um computador quando este 
+                se conecta à rede, mas que muda toda vez que há conexão.<br>
+                IP não válido: É um Nº. IP usado basicamente em empresas e instituições de pesquisa. Esse IP é na verdade 
+                um IP fictício usado dentro de uma rede interna. Ele foi criado para tentar amenizar o problema do esgotamento 
+                dos Números IPs. Por exemplo, uma rede com 100 computadores, usando um esquema de endereçamento 10.10.0.0/255.255.0.0, 
+                poderá ter acesso à Internet, com o NAT, usando um único endereço IP válido: o endereço IP da interface externa 
+                do NAT. Com isso temos uma grande economia de endereços IP 
+            </p>
+            
+        </div>
+    </body>
+</html>
